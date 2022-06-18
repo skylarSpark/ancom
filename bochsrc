@@ -12,9 +12,9 @@ boot: disk
 log: bochs.out
 
 # disable mouse and set keymap
-mouse: enable=0
-keybourd_mapping: enable=1,
+mouse: enabled=0
+keybourd_mapping: enabled=1,
 map=/usr/share/bochs/keymaps/x11-pc-us.map
 
 # disk setting
-ata0: enable=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
