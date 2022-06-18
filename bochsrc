@@ -1,0 +1,20 @@
+# set memory that cloud be used in bochs(MB)
+megs: 32
+
+# set BIOS and VGA BIOS
+romimage: file=/usr/share/bochs/BIOS-bochs-latest
+vgaromimage:file=/usr/share/bochs/VGABIOS-lgpl-latest
+
+# choose main boot method
+boot: disk
+
+# set log file
+log: bochs.out
+
+# disable mouse and set keymap
+mouse: enable=0
+keybourd_mapping: enable=1,
+map=/usr/share/bochs/keymaps/x11-pc-us.map
+
+# disk setting
+ata0: enable=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
