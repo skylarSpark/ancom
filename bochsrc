@@ -13,8 +13,7 @@ log: bochs.out
 
 # disable mouse and set keymap
 mouse: enabled=0
-keyboard: enabled=1,
-map=/usr/share/bochs/keymaps/x11-pc-us.map
+keyboard: keymap=/usr/share/bochs/keymaps/x11-pc-us.map
 
 # disk setting
 ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
